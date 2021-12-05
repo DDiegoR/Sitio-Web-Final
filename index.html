@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Personal - ＤϟＥＧＯ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">   
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+  <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ＤϟＥＧＯ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inicio
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Juegos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Counter Strike - Global Offensive</a>
+                  <a class="dropdown-item" href="#">Dota 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!--Caja 1 "Sobre mí"-->
+    <div class="caja1">
+        <div class="contenedor1-flex">
+            <div class="imgcaja1">
+                <img class="imgperfil transicionPerfil" src="img/perfil.jpg" alt="">
+            </div>
+            <div class="cont-caja1">
+                <h3 class="tituloperfil">Diego Romero - Camino a Global Elite</h3>
+                <blockquote class="parrafoperfil">
+                  <p>
+                    Jugador semi-profesional de Dota 2, en busca del aim perdido para lograr llegar al rango mas alto del matchmaking en Counter Strike - Global Offensive
+                    junto a su equipo "Los falsos TGD", con una nueva incorporación estrella STC-Recursos, tienen esperanzas de empezar un nuevo año 2022 
+                    siendo del rango mas alto del MM.
+                </p>
+                </blockquote>
+
+                <!-- Formulario -->
+                <button onclick="mostrarFormulario()" class="btn btn-success btn1">Escríbeme</button>
+                <div class="formu">
+                  <div class="formu2">
+                    <form id="formulario">
+                      <input class="entrada" type="text" placeholder="Nombre y Apellido">
+                      <textarea class="entrada" name="texto" cols="30" rows="3" placeholder="Escriba algo"></textarea>
+                      <!-- <button onclick="darGracias()" class="btn btn-success btn2">Enviar</button> -->
+                      <input type="button" onclick="darGracias()" class="btn btn-success btn2" value="Enviar">
+                    </form>
+                  </div>  
+                  <div id="gracias" style="display: none">Gracias!</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!--Caja 2 "Stats"-->
+    <div class="caja2">
+        <div class="contenedor2">
+            <h4 class="cont-titulo"> Mis Estadísticas</h4>
+            <div class="cont2-cajaflex">
+                <div class="cont2-flex">
+                  <table class="tablaStats">
+                    <tr>
+                      <th>Matchmaking Mode</th>
+                      <th>Wins</th>
+                      <th>Ties</th>
+                      <th>Losses</th>
+                      <th>Skill Group</th>
+                      <th>Last Match</th>
+                    </tr>
+                    <tr>
+                      <td>Competitive</td>
+                      <td>495</td>
+                      <td>80</td>
+                      <td>455</td>
+                      <td>14</td>
+                      <td>2021-11-14</td>
+                    </tr>
+                    <tr>
+                      <td>Wingman</td>
+                      <td>13</td>
+                      <td>2</td>
+                      <td>7</td>
+                      <td>2</td>
+                      <td>2021-11-06</td>
+                    </tr>
+                    
+                  </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!--Caja 3 "Videos"-->
+  <div class="caja3">
+    <h4 class="cont-titulo2">Clips Destacados</h4>
+      <div class="cont3-cajaflex">
+        <div class="cont3-flex">
+          <video controls class="video">
+            <source src="videos/Hs pedro.mp4" type="video/mp4"> 
+          </video>
+          <!--Boton MG-->
+          <div class="feeds">
+            <div class="actions">
+              <div class="heart"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cont3-flex">
+          <video controls class="video">
+            <source src="videos/ace sin win.mp4" type="video/mp4">
+          </video>
+          <!--Boton MG-->
+          <div class="feeds">
+            <div class="actions">
+              <div class="heart"></div>
+            </div>
+          </div>
+        </div>
+         <div class="cont3-flex">
+          <video controls class="video">
+            <source src="videos/hs wtf.mp4" type="video/mp4">
+          </video>
+          <!--Boton MG-->
+          <div class="feeds">
+            <div class="actions">
+              <div class="heart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <hr>
+
+  <!--Caja 4 "Pie de página"-->
+  <div class="caja4">
+    <h4 class="cont4-titulo">Quieres ver más?</h4>
+    <div class="redes">
+      <ul class="ulredes">
+        <li><a href="https://twitter.com/romerodiego356" target="_new" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/diegoromer9/?hl=es-la" target="_new" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.twitch.tv/diegoelnoobb" target="_new" class="twitch"><i class="fab fa-twitch"></i></a></li>
+        <li><a href="https://www.facebook.com/diego.romero.1420" target="_new" class="facebook"><i class="fab fa-facebook -f"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
